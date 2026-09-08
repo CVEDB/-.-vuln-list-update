@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: read
     env:
+      GITHUB_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
       VULN_LIST_DIR: "vuln-list-redhat"
     steps:
     # vuln-list-redhat dir uses more than 20GB of storage
